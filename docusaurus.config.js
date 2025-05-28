@@ -29,7 +29,6 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'Lyscoria', // Usually your GitHub org/user name.
   projectName: 'Starry-Sakura-Craft', // Usually your repo name.
-  deploymentBranch: 'gh-pages',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
