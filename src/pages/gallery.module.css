@@ -226,41 +226,22 @@
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
 
-@media (max-width: 768px) {
-  .sidebar {
-    width: 250px;
-    left: -250px;
-  }
-  
+@media (max-width: 996px) {
   .textBox {
-    bottom: 120px;
-    right: 20px;
-    left: 20px;
-    max-width: none;
+    margin-bottom: 1.8rem;
+    padding: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    right: 0;
+    width: 20rem;
   }
-  
-  .navigation {
-    bottom: 20px;
-  }
-  
-  .toggleButton {
-    top: 70px;
-    left: 10px;
-    width: 45px;
-    height: 45px;
-  }
-}
-
-@media (max-width: 480px) {
-  .textBox {
-    padding: 1.5rem;
-  }
-  
   .textBox h2 {
-    font-size: 1.2rem;
+    font-size: 1remn;
   }
-  
   .textBox p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+  }
+  .navigation {
+    bottom: 10px;
   }
 }

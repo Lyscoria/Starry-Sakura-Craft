@@ -116,3 +116,7 @@
 .theme-doc-markdown {
   min-height: 50rem !important;
 }
+
+.theme-layout-navbar-sidebar {
+  height: 100vh;
+}

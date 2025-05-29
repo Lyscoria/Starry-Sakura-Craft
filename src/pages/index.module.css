@@ -6,6 +6,11 @@
   color: white;
   position: relative;
   padding-bottom: 16rem;
+  z-index: 1;
+}
+
+.sidebar {
+  z-index: 9999;
 }
 
 .heroContent {
@@ -76,15 +81,6 @@
   .heroLeft { 
     text-align: center; 
   }
-  .heroTitle { 
-    font-size: 3rem; 
-  }
-  .heroSubtitle { 
-    font-size: 1.4rem; 
-  }
-}
-
-@media (max-width: 768px) {
   .heroImage img {
     width: 80px; 
     height: 80px; 

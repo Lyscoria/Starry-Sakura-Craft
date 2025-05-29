@@ -77,12 +77,16 @@
   color: #ffffff;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 996px) {
   .featuresSectionTitle {
     font-size: 2rem;
   }
   .featuresTitle {
     margin-bottom: 2rem;
     padding: 0 1rem;
+  }
+  .featureImage {
+    width: 60%;
+    margin-bottom: 1.5rem;
   }
 }
