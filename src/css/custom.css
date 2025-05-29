@@ -34,6 +34,7 @@
   color: #ffffff !important;
 }
 
+
 [data-theme='dark'] .footer {
   background-color: #1e1e1e !important;
   color: #ffffff !important;
@@ -65,6 +66,7 @@
   left: 0;
   right: 0;
   z-index: 9999;
+  height: 60px;
   transition: transform 0.3s ease-in-out !important;
   background-color: rgba(255, 255, 255, 0.95) !important;
   backdrop-filter: blur(10px) !important;
@@ -109,4 +111,8 @@
 .markdown h1 {
   text-align: left;
   margin-top: 2rem;
+}
+
+.theme-doc-markdown {
+  min-height: 50rem !important;
 }

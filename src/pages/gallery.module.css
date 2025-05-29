@@ -94,7 +94,7 @@
 .imageItem {
   display: flex;
   align-items: center;
-  padding: 10px;
+  padding: 8px;
   margin-bottom: 10px;
   background: rgba(255, 255, 255, 0.15);
   border-radius: 8px;
@@ -111,7 +111,7 @@
 
 .imageItem.active {
   background: rgba(255, 255, 255, 0.35);
-  border-left: 4px solid #25c2a0;
+  border-left: 4px solid #000000;
 }
 
 .imageItem img {

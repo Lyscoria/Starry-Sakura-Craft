@@ -9,12 +9,12 @@ const images = [
     description: '石英与琉璃的邂逅，纯净与斑斓的交融。在神圣的光影交错间，寻找心灵的永恒归宿。设计与建造：Cloud_ling'
   },
   {
-    src: 'img/wishing_tree_1.jpg',
+    src: 'img/wishing_tree_1.png',
     title: '许愿树',
     description: '樱花满树，心愿满怀;让花朵带着愿望飞向天空的云朵间。设计与建造：Cloud_ling'
   },
   {
-    src: 'img/wishing_tree_2.jpg',
+    src: 'img/wishing_tree_2.png',
     title: '许愿树',
     description: '樱花满树，心愿满怀;让花朵带着愿望飞向天空的云朵间。设计与建造：Cloud_ling'
   },

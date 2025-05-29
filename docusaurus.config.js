@@ -13,10 +13,9 @@ const config = {
   title: 'Starry Sakura Craft',
   tagline: 'A server for souls to meet and thrive.',
   favicon: 'img/cherry_blossom_tree.png',
-
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
-    v4: true, // Improve compatibility with the upcoming Docusaurus v4
+    v4: false, // Improve compatibility with the upcoming Docusaurus v4
   },
 
   // Set the production url of your site here
@@ -142,5 +141,4 @@ const config = {
       },
     }),
 };
-
 export default config;

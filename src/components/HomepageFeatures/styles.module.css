@@ -58,10 +58,11 @@
 }
 
 .featureButton {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem, !important;
 }
 
 .featureContent {
+  margin-top: 1rem;
   text-align: center;
 }
 
