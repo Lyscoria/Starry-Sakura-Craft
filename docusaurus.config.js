@@ -88,7 +88,7 @@ const config = {
             position: 'left'
           },
           {
-            href: 'https://github.com/lyscoria',
+            href: 'https://github.com/Lyscoria/Starry-Sakura-Craft',
             label: 'GitHub',
             position: 'right',
           },
