@@ -1,6 +1,9 @@
 ---
 title: 加入服务器
-description: 请与（前）腐竹NewMagnet联系
 ---
 
-这里目前还什么都没有（
+服务器采用白名单，请加QQ后商讨入服事宜。SSC欢迎您！
+
+:::tip
+请与负责人 NewMagnet 联系；QQ：3283574691。
+:::

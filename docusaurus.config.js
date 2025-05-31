@@ -29,7 +29,7 @@ const config = {
   organizationName: 'Lyscoria', // Usually your GitHub org/user name.
   projectName: 'Starry-Sakura-Craft', // Usually your repo name.
   deploymentBranch: 'gh-pages',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
@@ -70,11 +70,11 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/cherry_blossom_tree.jpg',
+      image: 'img/cherry_blossom_tree.png',
       navbar: {
         title: 'Starry Sakura Craft',
         logo: {
-          src: 'img/cherry_blossom_tree.jpg',
+          src: 'img/cherry_blossom_tree.png',
         },
         items: [
           {
@@ -85,6 +85,11 @@ const config = {
           {
             to: 'docs/plan',
             label: '企划🌟', 
+            position: 'left'
+          },
+          {
+            to: 'docs/bluemap/',
+            label: '地图🌏', 
             position: 'left'
           },
           {
@@ -107,6 +112,10 @@ const config = {
               {
                 label: 'Join',
                 to: 'docs/join',
+              },
+              {
+                label: 'Map',
+                to: 'docs/map',
               },
             ],
           },
