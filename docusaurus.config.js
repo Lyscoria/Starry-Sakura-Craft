@@ -22,7 +22,7 @@ const config = {
   url: 'https://lyscoria.github.io/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/Starry-Sakura-Craft/',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -78,6 +78,21 @@ const config = {
         },
         items: [
           {
+            to: 'docs/introduction',
+            label: '介绍📣', 
+            position: 'left'
+          },
+          {
+            to: 'docs/serverrule',
+            label: '规则⚠️', 
+            position: 'left'
+          },
+          {
+            to: 'intro',
+            label: '成员👤', 
+            position: 'left'
+          },
+          {
             to: 'gallery',
             label: '画廊🌆', 
             position: 'left'
@@ -90,6 +105,16 @@ const config = {
           {
             to: 'docs/bluemap/',
             label: '地图🌏', 
+            position: 'left'
+          },
+          {
+            to: 'docs/video',
+            label: '视频🎬', 
+            position: 'left'
+          },
+          {
+            to: 'docs/updatelog',
+            label: '更新📁', 
             position: 'left'
           },
           {
@@ -106,6 +131,22 @@ const config = {
             title: 'Docs',
             items: [
               {
+                label: 'Introduction',
+                to: 'docs/introduction',
+              },
+              {
+                label: 'Server Rule',
+                to: 'docs/serverrule',
+              },
+              {
+                label: 'Member',
+                to: 'intro',
+              },
+              {
+                label: 'Gallery',
+                to: 'gallery',
+              },
+              {
                 label: 'Plan',
                 to: 'docs/plan',
               },
@@ -117,6 +158,14 @@ const config = {
                 label: 'Map',
                 to: 'docs/map',
               },
+              {
+                label: 'Update',
+                to: 'docs/updatelog',
+              },
+              {
+                label: 'Video',
+                to: 'docs/video',
+              },
             ],
           },
           {
@@ -127,18 +176,26 @@ const config = {
                 href: 'http://47.122.27.73/',
               },
               {
-                label: 'LittleSkin',
-                href: 'https://littleskin.cn/',
-              },
-              {
-                label: 'Arcaea',
-                href: 'https://arcaea.lowiro.com/',
+                label: 'Chunkbase',
+                href: 'https://www.chunkbase.com/apps/seed-map#seed=1396669&platform=java_1_21_6&dimension=overworld&x=0&z=0&zoom=0.5',
               },
             ],
           },
           {
             title: 'More',
             items: [
+              {
+                label: 'LittleSkin',
+                href: 'https://littleskin.cn/',
+              },
+              {
+                label: 'MinecraftWiki',
+                href: 'https://zh.minecraft.wiki/',
+              },
+              {
+                label: 'MapartCraft',
+                href: 'https://rebane2001.com/mapartcraft/zh-Hans',
+              },
             ],
           },
         ],

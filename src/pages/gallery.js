@@ -6,22 +6,37 @@ const images = [
   {
     src: 'img/church.png',
     title: '教堂',
-    description: '石英与琉璃的邂逅，纯净与斑斓的交融。在神圣的光影交错间，寻找心灵的永恒归宿。设计与建造：Cloud_ling'
+    description: '庄严肃穆，沉静不语，默默守望着每一位玩家，虔诚祷告着繁荣的未来。\n设计：Alicia_X 建造：Alicia_X、NewMagnet、r000'
   },
   {
     src: 'img/wishing_tree_1.png',
     title: '许愿树',
-    description: '樱花满树，心愿满怀;让花朵带着愿望飞向天空的云朵间。设计与建造：Cloud_ling'
+    description: '就让我们在这株樱花树下，许下自己的祈愿吧。\n设计&建造：Alicia_X'
   },
   {
     src: 'img/wishing_tree_2.png',
     title: '许愿树',
-    description: '樱花满树，心愿满怀;让花朵带着愿望飞向天空的云朵间。设计与建造：Cloud_ling'
+    description: '就让我们在这株樱花树下，许下自己的祈愿吧。\n设计&建造：Alicia_X'
   },
   {
     src: 'img/alchemical_imbuer.png',
     title: '炼药机',
-    description: '魔法，机械，炼金，工业：将平凡的水源化作生命的甘露。设计与建造：rhnmabj'
+    description: 'SSC自研红石代表作之一，在红石与魔法的交溶中酿造出一瓶瓶秘药。\n设计&建造：rhnmabj'
+  },
+  {
+    src: 'img/observatory.png',
+    title: '天文台',
+    description: '无言地伫立在这片雅丹之中，冷静地凝望着灿烂星汉，在斗转星移中铭刻下时间的痕迹。\n设计：Alicia_X 建造：Alicia_X、LiFr、NewMagnet'
+  },
+  {
+    src: 'img/sdssyzx_1.png',
+    title: '山东省实验中学——树蕙楼前',
+    description: '“往事总在回忆时被赋予意义”\n设计&建造：NewMagnet、rhnmabj等'
+  },
+   {
+    src: 'img/Li3O4.png',
+    title: '锂磁居',
+    description: '敬我们互帮互助、携手并进的高三。\n建造：NewMagnet、LiFr'
   }
 ];
 
@@ -96,7 +111,7 @@ export default function Gallery() {
 
         <div className={`${styles.textBox} ${transitionPhase !== 'visible' ? styles.textFadeOut : styles.textFadeIn}`}>
           <h2>{images[currentImage].title}</h2>
-          <p>{images[currentImage].description}</p>
+          <p style={{ whiteSpace: 'pre-line' }}>{images[currentImage].description}</p>
         </div>
 
         <div className={styles.navigation}>
