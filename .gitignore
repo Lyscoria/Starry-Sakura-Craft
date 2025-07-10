@@ -1,8 +1,9 @@
 # Dependencies
-/node_modules
+/ssc-web/node_modules
+/ssc-api/node_modules
 
 # Production
-/build
+/ssc-web/build
 
 # Generated files
 .docusaurus

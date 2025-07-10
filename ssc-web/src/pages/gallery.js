@@ -2,49 +2,23 @@ import Layout from '@theme/Layout';
 import { useState, useEffect } from 'react';
 import styles from './gallery.module.css';
 
-const images = [
-  {
-    src: 'img/church.png',
-    title: '教堂',
-    description: '庄严肃穆，沉静不语，默默守望着每一位玩家，虔诚祷告着繁荣的未来。\n设计：Alicia_X 建造：Alicia_X、NewMagnet、r000'
-  },
-  {
-    src: 'img/wishing_tree_1.png',
-    title: '许愿树',
-    description: '就让我们在这株樱花树下，许下自己的祈愿吧。\n设计&建造：Alicia_X'
-  },
-  {
-    src: 'img/wishing_tree_2.png',
-    title: '许愿树',
-    description: '就让我们在这株樱花树下，许下自己的祈愿吧。\n设计&建造：Alicia_X'
-  },
-  {
-    src: 'img/alchemical_imbuer.png',
-    title: '炼药机',
-    description: 'SSC自研红石代表作之一，在红石与魔法的交溶中酿造出一瓶瓶秘药。\n设计&建造：rhnmabj'
-  },
-  {
-    src: 'img/observatory.png',
-    title: '天文台',
-    description: '无言地伫立在这片雅丹之中，冷静地凝望着灿烂星汉，在斗转星移中铭刻下时间的痕迹。\n设计：Alicia_X 建造：Alicia_X、LiFr、NewMagnet'
-  },
-  {
-    src: 'img/sdssyzx_1.png',
-    title: '山东省实验中学——树蕙楼前',
-    description: '“往事总在回忆时被赋予意义”\n设计&建造：NewMagnet、rhnmabj等'
-  },
-   {
-    src: 'img/Li3O4.png',
-    title: '锂磁居',
-    description: '敬我们互帮互助、携手并进的高三。\n建造：NewMagnet、LiFr'
-  }
-];
-
 export default function Gallery() {
+  const [images, setImages] = useState([]);
   const [currentImage, setCurrentImage] = useState(0);
   const [transitionPhase, setTransitionPhase] = useState('visible');
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [imagesLoaded, setImagesLoaded] = useState(new Set());
+
+  useEffect(() => {
+    fetch('http://localhost:3001/api/gallery')
+      .then(res => res.json())
+      .then(data => {
+        setImages(data);
+      })
+      .catch(err => {
+        console.error('获取画廊数据失败:', err);
+      });
+  }, []);
 
   useEffect(() => {
     images.forEach((image, index) => {
@@ -54,7 +28,7 @@ export default function Gallery() {
       };
       img.src = image.src;
     });
-  }, []);
+  }, [images]);
 
   const changeImage = (newIndex) => {
     if (newIndex === currentImage || transitionPhase !== 'visible') return;
@@ -67,6 +41,18 @@ export default function Gallery() {
       }, 50);
     }, 300);
   };
+
+  if (images.length === 0) {
+    return (
+      <Layout title="风光一览">
+        <div className={styles.galleryContainer}>
+          <div style={{textAlign: 'center', padding: '50px', color: 'white'}}>
+            加载中...
+          </div>
+        </div>
+      </Layout>
+    );
+  }
 
   return (
     <Layout title="风光一览">
